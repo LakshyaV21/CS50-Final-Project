@@ -1,0 +1,141 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f9fc;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* This changes from center to flex-start */
+    min-height: 100vh; /* Ensures content stretches at least to the full height of the viewport */
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Add max-width to ensure form doesn't get too narrow */
+    width: 100%; /* Ensure the form takes up the full width available within the max-width */
+    margin-top: 20px; /* Add space from the top */
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%; /* Make input fields responsive */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Make the button responsive */
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+p {
+    margin-top: 10px;
+}
+
+.navbar {
+    background-color: #00c2de;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 60px;
+    height: auto; /* Keeps aspect ratio */
+    margin-right: 15px;
+}
+
+.brand {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+nav a {
+    margin-left: 20px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.dashboard {
+    text-align: center;
+    padding: 40px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.allergies-page {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: light blue;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  .allergy-list label {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .custom-allergy {
+    margin-top: 20px;
+    width: 500px;
+  }
+
+  button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #00c0e4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .danger {
+    background-color: #ffe0e0;
+    border-left: 5px solid red;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.warning {
+    color: red;
+    font-weight: bold;
+}
