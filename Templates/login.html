@@ -1,0 +1,22 @@
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TripTaste</title>
+</head>
+<body>
+    <h2>Welcome to TripTaste!</h2>
+   <p style="color: red;">
+    <img src="{{ url_for('static', filename='images/triptaste-logo.png') }}" alt="TripTaste logo" width="120">
+
+    <form method="post">
+        <input name="username" placeholder="Username" required><br>
+        <input name="password" type="password" placeholder="Password" required><br>
+        <button type="submit">Log In</button>
+    </form>
+    <p>Don't have an account? <a href="/register">Sign up here</a></p>
+</body>
+</html>

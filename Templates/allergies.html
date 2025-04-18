@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Allergies - TripTaste</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<header class="navbar">
+  <div class="logo-container">
+
+      <h1 class="brand">TripTaste</h1>
+  </div>
+  <nav>
+      <a href="/">Dashboard</a>
+      <a href="/allergies">Set Allergies</a>
+      <a href ="/mypreferences">My Preferences</a>
+      <a href ="/travelguide">Travel Guide</a>
+      <a href="/logout">Logout</a>
+  </nav>
+</header>
+<body>
+  <div class="allergies-page">
+
+    <h2>Select Your Allergies</h2>
+
+    <form method="POST">
+      <div class="allergy-list">
+        <label><input type="checkbox" name="allergy" value="gluten"> Gluten</label>
+        <label><input type="checkbox" name="allergy" value="peanuts"> Peanuts</label>
+        <label><input type="checkbox" name="allergy" value="treenuts"> Treenuts</label>
+        <label><input type="checkbox" name="allergy" value="fish"> Fish</label>
+        <label><input type="checkbox" name="allergy" value="eggs"> Eggs</label>
+        <label><input type="checkbox" name="allergy" value="fruits"> Fruits</label>
+        <label><input type="checkbox" name="allergy" value="dairy"> Dairy</label>
+        <label><input type="checkbox" name="allergy" value="shellfish"> Shellfish</label>
+        <label><input type="checkbox" name="allergy" value="soy"> Soy</label>
+        <!-- add more if needed -->
+      </div>
+
+      <div class="custom-allergy">
+        <input type="text" name="customAllergy" placeholder="Add a custom allergy" />
+      </div>
+
+      <button type="submit">Save Preferences</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TripTaste Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-container">
+
+            <h1 class="brand">TripTaste</h1>
+        </div>
+        <nav>
+            <a href="/">Dashboard</a>
+            <a href="/allergies">Set Allergies</a>
+            <a href="/preferences">My Preferences</a>
+            <a href="/travelguide">Travel Guide</a>
+            <a href="/logout">Logout</a>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <img src="{{ url_for('static', filename='images/triptaste-logo.png') }}" alt="TripTaste logo" width="120">
+        <h2>Welcome to TripTaste!</h2>
+        <p>Your personal food planner while traveling.</p>
+        <p><a href="/allergies">Set Your Allergies</a> | <span style="color: gray;">Find Safe Food</span></p>
+    </main>
+</body>
+</html>
